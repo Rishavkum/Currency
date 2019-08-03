@@ -1,0 +1,34 @@
+<div>
+  <span><input #cpName id=box placeholder="Search currency you want to predict"/>
+  <button id=button (click)="this.getCu(cpName.value) ; cpName.value=''"> Search </button>
+</span>
+
+</div>
+<h2 id="abc">
+  Below are the prediction of currency compare to dollar
+</h2>
+
+
+<div id="content">
+    <h2 id="abc2">{{this.currentStock.name | uppercase}}{{this.currentStock.country | uppercase}} </h2>
+<table>
+  <tr *ngIf="this.currentStock !==undefined">
+    <td id="year" *ngFor="let v of this.currentStock.year">{{v}}</td>
+    
+  </tr>
+  <tr><td id="value" *ngFor="let v of this.currentStock.value">{{v}}</td></tr>
+</table>
+</div>
+
+  <div style="text-align: left;color:aliceblue"><h3>Past Search:-</h3></div>
+  <table border="1px" (click)="this.getCu(paststock.name) ; stockName.value=''">
+    <tr *ngFor="let paststock of this.pastStocks">
+      <td id=alerttext>{{paststock.country}}</td>
+     <td>{{paststock.name}}</td>
+
+      <td *ngFor="let v of paststock.value">{{v}}</td>
+    <td>{{paststock.searchTime}}</td>
+    <td (click)="this.getCuu(paststock.name) ; ">click here<td>
+
+
+    </table>

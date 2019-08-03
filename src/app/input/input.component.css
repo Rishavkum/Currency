@@ -1,0 +1,51 @@
+#box
+{
+ font-size: 1em;
+ padding: 1em;
+ width: 60%;
+ border-radius: 25px ;
+}
+#button{
+
+  font-style: oblique;
+   border-radius: 25px;
+
+  font-size: 1em;
+  padding :1em;
+}
+#alerttext{
+  font-style: normal;
+  font-size: 30px;
+
+}
+
+#content{
+  border: 2px solid white;
+  margin-left: 33%;
+  height: 200px;
+  width: 30%;
+  border-radius: 8px;
+}
+#abc{
+  color: antiquewhite;
+  margin-bottom: 60px;
+}
+#abc2{
+  border-bottom: 2px solid white;
+  height: 34px;
+  font-size:30px; 
+  margin-bottom: 9px;
+}
+#year{
+   color: #fff;
+   font-size: 30px;
+   padding: 5px 10px;
+}
+#value{
+  color:rgb(27, 26, 26);
+  font-size: 30px;
+  padding: 5px 10px;
+}
+
+
+
